@@ -1,0 +1,14 @@
+name: Update Fork
+on:
+ schedule:
+  - cron: '35 0 * * *'
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: atactions/fork-sync@v1.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          owner: snail007
+          allbranches: true
+          
