@@ -24,11 +24,11 @@
 
 软件名称 | 免费版功能 | 商业版功能 | 购买使用 | 特点
 :----------- | :---: | :---: | :---: | :---:
-[proxy-admin free免费版](https://github.com/snail007/proxy_admin_free) |   √ |   x |   x| Web界面操作，免费使用，服务数量有限制，适合个人，小白和白嫖党
-[proxy-admin vip版](https://github.com/snail007/proxy-admin-vip) |   √ |   x |   √| Web界面操作，服务数量无限制，适合个体户或者小集体
-[proxy-admin coml商业版](https://github.com/snail007/proxy-admin-commercial) |   √ |   √ |   √|Web界面操作，无限制，适合集体或公司对外提供服务
-[gorproxy命令行 free免费版](https://github.com/snail007/goproxy) |   √ |   x |   x|命令行操作，免费使用，稳定且灵活，适合一切熟悉命令行的大佬或集体或公司白嫖，自用或者大规模部署对外服务
-[gorproxy命令行 commercial商业版](https://github.com/snail007/goproxy)|   √ |   √ |   √|命令行操作，稳定且灵活，适合集体或公司大规模部署对外提供服务
+[proxyadmin 免费版](https://github.com/snail007/proxy_admin_free) |   √ |   x |   x| Web界面操作，免费使用，服务数量有限制，适合个人，小白和白嫖党
+[proxyadmin VIP版](https://github.com/snail007/proxy-admin-vip) |   √ |   x |   √| Web界面操作，服务数量无限制，适合个体户或者小集体
+[proxyadmin 商业版](https://github.com/snail007/proxy-admin-commercial) |   √ |   √ |   √|Web界面操作，无限制，适合集体或公司对外提供服务
+[gorproxy 免费版](https://github.com/snail007/goproxy) |   √ |   x |   x|命令行操作，免费使用，稳定且灵活，适合一切熟悉命令行的大佬或集体或公司白嫖，自用或者大规模部署对外服务
+[gorproxy 商业版](https://github.com/snail007/goproxy)|   √ |   √ |   √|命令行操作，稳定且灵活，适合集体或公司大规模部署对外提供服务
 
 关于免费版功能和商业版功能对比请看这里,[`免费版`和`商业版`功能对比](https://snail007.github.io/goproxy/page/free_vs_commercial/).  
 
@@ -1711,10 +1711,9 @@ bytes: 此次使用的流量字节数.
 ### 主动断开用户连接
 
 proxy的http(s)/socks5/sps代理功能支持`控制接口`,可以通过参数`--control-url`指定的http接口地址,
-那么proxy就会`定期`的把当前连接到proxy的全部用户名或客户端IP发送到此URL，具体情况是,proxy发送一个HTTP到POST请求到`--control-url`设置的HTTP URL地址.  
-`定期`默认是30秒，可以通过`--control-sleep`参数修改此值。
+那么proxy就会`定期`的把当前连接到proxy的全部用户名或客户端IP发送到此URL，具体情况是,proxy发送一个HTTP的POST请求到`--control-url`设置的HTTP URL地址.`定期`默认是30秒，可以通过`--control-sleep`参数修改此值。  
 当用户过期，或者用户流量已经用完，通过认证API只能控制用户不能新建连接，但是已经和proxy建立当连接没法立刻断开，
-那么通过控制接口可以解决这个问题，控制接口会在最慢`定期`时间内通过控制接口返回当内容，结束已经无效当用户建立当连接。
+那么通过控制接口可以解决这个问题，控制接口会在最慢`定期`时间内通过控制接口返回的内容，结束已经无效的用户建立的连接。
 
 #### 控制接口请求说明
 
