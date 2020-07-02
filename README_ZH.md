@@ -14,7 +14,7 @@
 ---
 ### [点击我观看视频教程](https://space.bilibili.com/472844633)
 - [点击下载](https://github.com/snail007/goproxy/releases)
-- 如果上面不能正常下载，点击这里[镜像下载](http://mirrors.host900.com:9090/snail007/goproxy/)
+- 如果上面不能正常下载，点击这里[镜像下载](https://mirrors.host900.com/snail007/goproxy/)
 - [桌面版，控制面板ProxyAdmin](https://github.com/snail007/proxy_admin_free/blob/master/README_ZH.md)
 - [安卓全局代理版](https://github.com/snail007/goproxy-ss-plugin-android) 
 - [安卓全能代理版](https://github.com/snail007/goproxy-android) 
@@ -93,13 +93,13 @@
 免费版执行这个：  
 
 ```shell  
-curl -L http://mirrors.host900.com:9090/snail007/goproxy/install_auto.sh | bash  
+curl -L https://mirrors.host900.com/snail007/goproxy/install_auto.sh | bash  
 ```  
 
 商业版执行这个：  
 
 ```shell  
-curl -L http://mirrors.host900.com:9090/snail007/goproxy/install_auto_commercial.sh | bash  
+curl -L https://mirrors.host900.com/snail007/goproxy/install_auto_commercial.sh | bash  
 ```  
 
 安装完成，配置目录是/etc/proxy，更详细的使用方法请参考上面的手册目录，进一步了解你想要使用的功能。  
@@ -109,7 +109,7 @@ curl -L http://mirrors.host900.com:9090/snail007/goproxy/install_auto_commercial
 
 1.下载goproxy
 
-根据你的平台和CPU类型选择,下载地址: http://mirrors.host900.com:9090/snail007/goproxy ,  
+根据你的平台和CPU类型选择,下载地址: https://mirrors.host900.com/snail007/goproxy ,  
 
 这里以`proxy-linux-amd64.tar.gz`为例,具体使用的时候,请根据你的平台和CPU类型选择具体文件名称.   
 
@@ -117,14 +117,14 @@ curl -L http://mirrors.host900.com:9090/snail007/goproxy/install_auto_commercial
 
 ```shell  
 cd /root/proxy/  
-wget http://mirrors.host900.com:9090/snail007/goproxy/proxy-linux-amd64.tar.gz  
+wget https://mirrors.host900.com/snail007/goproxy/proxy-linux-amd64.tar.gz  
 ```  
 
 商业版执行这个：  
 
 ```shell  
 cd /root/proxy/  
-wget http://mirrors.host900.com:9090/snail007/goproxy/proxy-linux-amd64_commercial.tar.gz  
+wget https://mirrors.host900.com/snail007/goproxy/proxy-linux-amd64_commercial.tar.gz  
 ```  
 
 2.下载自动安装脚本
@@ -192,30 +192,27 @@ Proxy is licensed under GPLv3 license。
 
 [点击查看其它安装教程](https://github.com/snail007/goproxy/blob/master/README_ZH.md#%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85-goproxy)
 
-## 免费版、商业版说明
-
-本手册描述功能,`proxyadmin商业版`和`goproxy商业版`全部包含;认证等高级功能参数免费版和VIP控制面板不包含; 
-
-如果您用`goproxy免费版`执行某些命令或者`proxyadmin 免费版`、`proxyadmin VIP版`服务启动失败的时候遇到,类似如下xxx参数不存在的提示,说明这个参数是商业版的功能,您需要下载并购买商业版授权才能使用.  
-` err : unknown short flag '-a'`  
+### 5. 关于proxy-admin控制面板和命令行gorpoxy
 
 以下软件都是相互独立使用，没有依赖关系，需要购买的也是分别单独购买使用。
 
 软件名称 | 免费版功能 | 商业版功能 | 购买使用 | 特点
 :----------- | :---: | :---: | :---: | :---:
-[proxyadmin 免费版](https://github.com/snail007/proxy_admin_free) |   √ |   x |   x| Web界面操作，免费使用，服务数量有限制，适合个人，小白和白嫖党
-[proxyadmin VIP版](https://github.com/snail007/proxy-admin-vip) |   √ |   x |   √| Web界面操作，功能和免费版一样，服务数量无限制，适合个体户或者小集体
-[proxyadmin 商业版](https://github.com/snail007/proxy-admin-commercial) |   √ |   √ |   √|Web界面操作，无限制，适合集体或公司对外提供服务
-[proxyadmin 集群版](https://github.com/snail007/proxy-admin-cluster) |   √ |   √ |   √|Web界面操作，无限制，配合`goproxy 商业版`,可以实现以组为单位，管理海量机器上的proxy服务，适合有大量机器的集体或公司对外提供服务
-[goproxy 免费版](https://github.com/snail007/goproxy) |   √ |   x |   x|命令行操作，免费使用，稳定且灵活，适合一切熟悉命令行的大佬或集体或公司白嫖，自用或者大规模部署对外服务
-[goproxy 商业版](https://github.com/snail007/goproxy)|   √ |   √ |   √|命令行操作，稳定且灵活，适合集体或公司大规模部署对外提供服务
+[proxyadmin 免费版](https://github.com/snail007/proxy_admin_free) |   √ |   x |   x| Web界面操作，支持Linux，Windows，macOS，免费使用，服务数量有限制，适合个人，小白和白嫖党
+[proxyadmin VIP版](https://github.com/snail007/proxy-admin-vip) |   √ |   x |   √| Web界面操作，支持更多平台，功能和免费版一样，服务数量无限制，适合个体户或者小集体
+[proxyadmin 商业版](https://github.com/snail007/proxy-admin-commercial) |   √ |   √ |   √|Web界面操作，支持更多平台，无限制，适合集体或公司对外提供服务
+[proxyadmin 集群版](https://github.com/snail007/proxy-admin-cluster) |   √ |   √ |   √|Web界面操作，支持Linux，Windows，macOS，无限制，配合`goproxy 商业版`,可以实现以组为单位，管理海量机器上的proxy服务，适合有大量机器的集体或公司对外提供服务
+[goproxy 免费版](https://github.com/snail007/goproxy) |   √ |   x |   x|命令行操作，全平台支持，免费使用，稳定且灵活，适合一切熟悉命令行的大佬或集体或公司白嫖，自用或者大规模部署对外服务
+[goproxy 商业版](https://github.com/snail007/goproxy)|   √ |   √ |   √|命令行操作，全平台支持，稳定且灵活，适合集体或公司大规模部署对外提供服务
 
 关于免费版功能和商业版功能对比请看这里,[`免费版`和`商业版`功能对比](https://snail007.github.io/goproxy/page/free_vs_commercial/).  
 
-提示：
+## 购买商业版
 
-**免费和付费软件均没有额外技术支持，不按着手册操作的一切问题请自行解决。付费软件免费享有`手册功能`使用指导和`首次安装配置`指导。**
-
+本手册描述功能,商业版全部包含;认证等高级功能参数免费版不包含;  
+如果您用免费版执行某些命令等时候遇到,类似如下xxx参数不存在的提示,说明这个参数是商业版的功能,您需要下载并购买商业版授权才能使用.  
+` err : unknown short flag '-a'`  
+免费版和商业版功能对比、如何购买和使用商业版详细操作[请点击这里查看](https://snail007.github.io/goproxy/page/free_vs_commercial/).   
 
 ## 首次使用必看,谢谢!!！ 
 
