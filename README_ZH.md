@@ -13,14 +13,15 @@
 
 ---
 ### [点击我观看视频教程](https://space.bilibili.com/472844633)
-- [点击下载](https://github.com/snail007/goproxy/releases)
-- 如果上面不能正常下载，点击这里[镜像下载](https://mirrors.host900.com/snail007/goproxy/)
+- [下载地址（国外）](https://github.com/snail007/goproxy/releases)
+- [下载地址（国内）](https://mirrors.host900.com/snail007/goproxy/)
+- [官方手册（国外）](https://snail007.github.io/goproxy/manual/zh/)
+- [官方手册（国内）](https://snail.gitee.io/proxy/manual/zh/)
 - [桌面版，控制面板ProxyAdmin](https://github.com/snail007/proxy_admin_free/blob/master/README_ZH.md)
 - [安卓全局代理版](https://github.com/snail007/goproxy-ss-plugin-android) 
 - [安卓全能代理版](https://github.com/snail007/goproxy-android) 
 - [安卓内网穿透客户端](https://github.com/snail007/lanass) 
 - [SDK](https://github.com/snail007/goproxy-sdk)
-- [GORPOXY帮助手册](https://snail007.github.io/goproxy/manual/zh/) 
 - [GORPOXY实战教程](https://snail007.github.io/goproxy)  
 - [免费版VS商业版(安装、激活)](https://snail007.github.io/goproxy/page/free_vs_commercial/)
 
@@ -1999,12 +2000,13 @@ agent ： 是功能参数，表示运行agent模式。
 
 -c ：`proxyadmin集群版`的集群端口地址，格式：IP:端口。  
 
--i ： agent唯一标识，保证每个agent的都不一样，此处指定的`唯一标识`,在控制面板添加节点的时候用到，IP一栏填写这个`唯一标识`。
-      如果-i不指定，默认是空，控制面板添加节点的时候IP一栏填写：agent的出口IP。
--u： 代理参数，默认是空。可以指定一个代理，agent会通过这个代理与cluster通讯。
-     格式和`--jumper`格式一致，详细情况请参考手册中`--jumper`部分。
+-i ： agent唯一标识，保证每个agent的都不一样，此处指定的`唯一标识`,在控制面板添加节点的时候用到，IP一栏填写这个`唯一标识`。  
+      如果-i不指定，默认是空，控制面板添加节点的时候IP一栏填写：agent的出口IP。  
 
-提示：
+-u： 代理参数，默认是空。可以指定一个代理，agent会通过这个代理与cluster通讯。  
+     格式和`--jumper`格式一致，详细情况请参考手册中`--jumper`部分。  
+
+提示：  
 
 1.当控制面板里面配置了client服务，那么所有节点都使用相同都key那么就导致，只有一个client可以工作，为了解决这个问题，  
 client服务参数里面可以通过使用占位符：`{AGENT_ID}`引用agent的id当作client的key，这样就可以保证每个客户端都有唯一的key。  
